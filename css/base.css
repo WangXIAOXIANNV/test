@@ -1,0 +1,53 @@
+/* 默认样式清除 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式的代码 */
+    box-sizing: border-box;
+}
+/* 16像素1.5倍的行高 */
+body{
+    font: 16px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif,"Microsoft YaHei",
+    "Hiragino Sans GB", "HeiTi SC","WenQuanYi Micro Hei";
+    color:#333;
+}
+ 
+li {
+    /* li标签样式清除 */
+    list-style: none;
+}
+ 
+a {
+    /* a标签样式清除 */
+    text-decoration: none;
+    color: #333;
+}
+ 
+    /*  设置图片的的垂直对齐方式，去除图的3px  */
+img{
+    vertical-align: middle;
+}
+input{
+    outline: none;
+    border: none;
+    color: #333;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+em,i,b,strong{
+    font-style: normal;
+    font-weight: normal;
+}
+/* 双伪元素清除 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: block;
+}
+.clearfix::after{
+    clear: both;
+}

@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?kjbnun');
+    src:  url('../fonts/icomoon.eot?kjbnun#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?kjbnun') format('truetype'),
+      url('../fonts/icomoon.woff?kjbnun') format('woff'),
+      url('../fonts/icomoon.svg?kjbnun#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+
+/* 各个页面相同的样式表 */
+/* 版心  */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷导航 */
+.shortcut{
+    height:52px;
+    background: #333;
+}
+.shortcut .wrapper{
+    height:52px;
+    /* background: pink; */
+}
+.shortcut .wrapper ul{
+    float: right;
+}
+.shortcut .wrapper ul li{
+    float: left;
+    line-height:52px;
+}
+.shortcut .wrapper ul li a{
+    padding: 0 16px;
+    border-right: 1px solid #666;
+    font-size: 14px;
+    color: #dcdcdc;
+    
+}
+.shortcut .wrapper ul li a span{
+    font-family: 'icomoon';
+    display: inline-block;
+    width: 11px;
+    height: 16px;
+    font-size: 20px;
+    margin-right: 16px;
+    /* vertical-align: middle; */
+}
+.header{
+    height:70px;
+    
+    margin: 30px auto;
+}
+.header .logo{
+    float: left;
+    width: 207px;
+    height: 70px;
+
+    margin-right: 40px;
+}
+.header .logo h1{
+    width: 207px;
+    height: 70px;
+}
+.header .logo h1 a{
+    display: block;
+    width: 207px;
+    height: 70px;
+    background: url(../img/logo.png);
+    background-size: contain;
+    font-size: 0;
+
+}
+.header .nav{
+    float: left;
+    height: 70px;
+    /* background: pink; */
+}
+.header .nav ul li{
+    float: left;
+    margin-right: 48px;
+    line-height: 70px;
+}
+.header .nav ul li a{
+    padding-bottom: 7px;
+}
+.header .nav ul li:hover a{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+.header .search{
+    width: 172px;
+    height: 30px;
+    border-bottom: 1px solid #e7e7e7;
+    margin-left: 34px;
+    float: left;
+    margin-top: 24px;
+    font-family: 'icomoon';
+    position: relative;
+}
+.header .search span{
+    position: absolute;
+    left: 2px;
+    top: 0;
+    font-size: 18px;
+}
+.header .search input{
+    padding-left: 30px;
+    width: 172px;
+    height: 29px;
+    
+}
+
+.header .search input::placeholder{
+    color: #ccc;
+    font-size: 14px;
+}
+.header .car{
+    float: left;
+    width: 23px;
+    height: 23px;
+    /* background-color: pink; */
+    margin-left: 34px;
+    font-family: 'icomoon';
+    margin-top: 24px;
+    position: relative;
+}
+.header .car span{
+    font-size: 23px;
+    
+}
+.header .car b{
+    background-color: red;
+    width: 20px;
+    height: 15px;
+    border-radius: 15px;
+    position: absolute;
+    right: -13px;
+    top: -6px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 13px;
+    color: #fff;
+}
+.footer{
+    height: 342px;
+    background-color: #333;
+}
+.footer .wrapper{
+    width: 1393px;
+    margin: 0 auto;
+}
+.footer .wrapper .top{
+    height: 175px;
+    border-bottom: 1px solid #434343;
+    padding-left: 135px;
+    padding-top: 59px;
+}
+
+.footer .wrapper .top ul li{
+    width: 195px;
+    height: 58px;
+    float: left;
+    margin-right: 300px;
+    /* background-color: pink; */
+    font-size: 28px;
+    color: #ccc;
+
+}
+.footer .wrapper .top ul li:last-child{
+    margin-right: 0px;
+}
+/* 如果行内块和行内文字无法通过：vertical-align或者行高对齐，定位 */
+.footer .wrapper .top ul li::before{
+    content: "";
+    
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    background: url(../img/f_img1.png) no-repeat center;
+    vertical-align: middle;
+
+}
+.footer .wrapper .top ul li span{
+    line-height: 58px;
+}
+.footer .wrapper .top ul li:nth-child(2):before{
+    background: url(../img/f_img2.png) no-repeat center;
+}
+.footer .wrapper .top ul li:nth-child(3):before{
+    background: url(../img/f_img3.png) no-repeat center;
+}
+.footer .bottom{
+    padding-top: 40px;
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+.footer .bottom p{
+    margin-bottom: 20px;
+}
+.footer .bottom a{
+    color: #999;
+    font-size: 14px;
+}
